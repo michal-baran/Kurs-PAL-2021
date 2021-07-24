@@ -1,4 +1,4 @@
-package KółkoKrzyżyk;
+package Projekt1;
 
 //        Napisz prostą grę w kółko krzyżyk
 //

@@ -1,4 +1,4 @@
-package KółkoKrzyżyk;
+package Projekt1;
 
 public class Field {
     private boolean occupied = false;

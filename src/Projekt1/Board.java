@@ -1,4 +1,4 @@
-package KółkoKrzyżyk;
+package Projekt1;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

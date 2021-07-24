@@ -1,4 +1,4 @@
-package KółkoKrzyżyk;
+package Projekt1;
 
 public class FieldOccupied extends RuntimeException {
     public FieldOccupied() {

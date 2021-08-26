@@ -148,7 +148,7 @@ public class Game implements Initialisable, Playable {
         //sprawdzenie przekątnych "opadających"
         for (int j = 0; j < symbolsToWin; j++) {
             for (int i = 0; i < symbolsToWin; i++) {
-                if (x1 + j + i > x2 || board.getFieldSymbol((x1 + j + i), actMove[1]) != symbol) {
+                if (x1 + j + i > x2 || board.getFieldSymbol((x1 + j + i), y1 +j + i) != symbol) {
                     break;
                 }
                 if (i == symbolsToWin - 1) {

@@ -1,4 +1,4 @@
-package Projekt1;
+package TicTacToe;
 
 public class FieldOccupied extends RuntimeException {
     public FieldOccupied() {

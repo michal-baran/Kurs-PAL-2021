@@ -1,4 +1,4 @@
-package Projekt1;
+package TicTacToe;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

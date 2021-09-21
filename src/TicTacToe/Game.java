@@ -1,4 +1,4 @@
-package Projekt1;
+package TicTacToe;
 
 import java.util.*;
 
@@ -124,15 +124,7 @@ public class Game implements Initialisable, Playable {
 
 
         //sprawdzenie kolumn
-        for (int j = 0; j < symbolsToWin; j++) {
-            for (int i = 0; i < symbolsToWin; i++) {
-                if (y1 + j + i > y2 || board.getFieldSymbol(actMove[0], (y1 + j + i)) != symbol) {
-                    break;
-                }
-            }
-        }
-
-        //sprawdzenie wierszy
+        System.out.println("kolumny");
         for (int j = 0; j < symbolsToWin; j++) {
             for (int i = 0; i < symbolsToWin; i++) {
                 if (y1 + j + i > y2 || board.getFieldSymbol(actMove[0], (y1 + j + i)) != symbol) {
@@ -145,10 +137,25 @@ public class Game implements Initialisable, Playable {
             }
         }
 
+        //sprawdzenie wierszy
+        System.out.println("wiersze");
+        for (int j = 0; j < symbolsToWin; j++) {
+            for (int i = 0; i < symbolsToWin; i++) {
+                if (x1 + j + i > x2 || board.getFieldSymbol((x1 + j + i), actMove[1]) != symbol) {
+                    System.out.println("i:" + i + ", j:" + j + ", x1:" + x1 + ", x2:" + x2);
+                    break;
+                }
+                if (i == symbolsToWin - 1) {
+                    actPlayer.addWin();
+                    return true;
+                }
+            }
+        }
+
         //sprawdzenie przekątnych "opadających"
         for (int j = 0; j < symbolsToWin; j++) {
             for (int i = 0; i < symbolsToWin; i++) {
-                if (x1 + j + i > x2 || board.getFieldSymbol((x1 + j + i), y1 +j + i) != symbol) {
+                if (x1 + j + i > x2 || board.getFieldSymbol((x1 + j + i), y1 + j + i) != symbol) {
                     break;
                 }
                 if (i == symbolsToWin - 1) {

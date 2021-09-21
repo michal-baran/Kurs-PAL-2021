@@ -1,4 +1,4 @@
-package Projekt1;
+package TicTacToe;
 
 public interface Initialisable {
     Playable init();

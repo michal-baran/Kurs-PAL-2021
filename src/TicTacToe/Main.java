@@ -1,4 +1,4 @@
-package Projekt1;
+package TicTacToe;
 
 //        Napisz prostą grę w kółko krzyżyk
 //
